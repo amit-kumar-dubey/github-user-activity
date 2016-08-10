@@ -1,0 +1,16 @@
+
+<div id="main-list">
+   <ul ng-repeat="item in redditData.data.children">
+      <li>
+         <h5><a ng-class="{'stickied':item.data.stickied}" href="{{item.data.url}}">{{ item.data.title }}</a> <label class="{{item.data.link_flair_css_class}}"> {{ item.data.link_flair_text }} </label> <span class="domain"><a href="https://www.reddit.com/r/javascript">({{item.data.domain}})</a></span> </h5>
+		<p class="tagline"><time title="{{ item.data.created * 1000 | date:'EEE MMM d h:m:s Z'}}" datetime="{{ item.data.created * 1000 | date:'EEE MMM d h:m:s Z'}}" class="">{{ item.data.created | getDate }}</time>
+         <time ng-show="{{ item.data.edited }}" class="edited-timestamp" title="" datetime="{{ item.data.edited * 1000 | date:'EEE MMM d h:m:s Z'}}">*</time>
+         <a class="{{ item.data.distinguished }}" href="https://www.reddit.com/user/{{item.data.author}}" >{{ item.data.author }}</a>
+         <span ng-if="'moderator'==item.data.distinguished "><a class="{{ item.data.distinguished }}" href="/r/javascript/about/moderators">&#91;M&#93;</a></span>
+         <a  ng-if="item.data.stickied" href="" class="stickied-tagline">announcement</a>
+         </p>
+         <p class="comments" ng-hide=" item.data.num_comments==0 "><a href="https://www.reddit.com{{item.data.permalink}}">{{item.data.num_comments}} comments </a></p>
+      </li>
+   </ul>
+</div>
+
