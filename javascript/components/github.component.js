@@ -8,7 +8,7 @@
             },
             transclude: true,
 
-            templateUrl: 'javascript/templates/pages/github.component.html',
+            templateUrl: 'github-user-activity/javascript/templates/pages/github.component.html',
 
             controller: function($log, userService) {
                 var vm = this;
