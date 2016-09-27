@@ -33,17 +33,17 @@
             bindings: {
                 data: "<"
             },
-            templateUrl: 'javascript/templates/pages/user.profile.bio.html'
+            templateUrl: 'github-user-activity/javascript/templates/pages/user.profile.bio.html'
         }).component('userProfileNav', {
             bindings: {
                 data: "<"
             },
-            templateUrl: 'javascript/templates/pages/user.profile.nav.html'
+            templateUrl: 'github-user-activity/javascript/templates/pages/user.profile.nav.html'
         }).component('userProfileRepo', {
             bindings: {
                 data: "<"
             },
-            templateUrl: 'javascript/templates/pages/user.profile.repo.html'
+            templateUrl: 'github-user-activity/javascript/templates/pages/user.profile.repo.html'
         });
 
 
