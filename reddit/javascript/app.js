@@ -1,4 +1,4 @@
-// @mhamitdubey@gmail.com
+// @amit kumar dubey
 // For beter structure i breaking files into the following folder structure-
 // js
 //   controllers      
@@ -16,8 +16,7 @@ var app = angular.module('Reddit', ['ngRoute'])
                  
             })
             .when('/reddit.com', {
-
-                templateUrl: 'javascript/templates/pages/lists/reddit.html'
+                templates:"<reddit-c></reddit-c>"
             })
             .otherwise({
                 redirectTo: '/'
