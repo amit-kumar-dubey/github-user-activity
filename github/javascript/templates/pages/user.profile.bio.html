@@ -1,0 +1,18 @@
+<!-- This is example of jsondata in view not a complete page -->
+<div class="user-profile">
+    <img ng-src="{{$ctrl.data.avatar_url}}" alt="User profile picture" />
+    <br>
+    <h3>{{$ctrl.data.name}}</h3>
+    <br>
+    <strong>{{$ctrl.data.company}}</strong>
+    <br>
+    <span>{{$ctrl.data.location}}</span>
+    <br>
+    <span>{{$ctrl.data.email}}</span>
+    <br>
+    <span>{{$ctrl.data.blog}}</span>
+    <br>
+    <span class="join-label">Joined on </span>
+    <local-time class="join-date" year="numeric" month="short" day="numeric" datetime="{{ $ctrl.data.created_at| date:'MMM d, yyyy Z'}}" title="{{ $ctrl.data.created_at| date:'MMM d, yyyy Z'}}"> {{ $ctrl.data.created_at| date:'MMM d, yyyy '}}</local-time>
+    <br>
+</div>

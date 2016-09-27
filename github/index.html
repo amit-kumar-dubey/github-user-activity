@@ -1,0 +1,32 @@
+<html ng-app="Github">
+
+<head>
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/apple-icon-114x114.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="generator" content="This webapp showing the json data" />
+    <meta content='' http-equiv='Content-type' />
+    <base href="/">
+    <title> Web app</title>
+    <meta content="" name="" />
+    <meta content="Reddit web app " name="Reddit" />
+    <link href='./img/logo.png' rel='icon' type='image/png' />
+    <link href="css/lib/bootstrap.min.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="css/index.css" media="all" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class='container-fluid'>
+        <div class="container row">
+            <div ng-view>
+            </div>
+        </div>
+</body>
+<script src="javascript/lib/angular.min_1-5-1.js" type="text/javascript"></script>
+<script src="javascript/lib/angular-mocks.js" type="text/javascript"></script>
+<script src="javascript/lib/angular-route.js" type="text/javascript"></script>
+<script src="javascript/app.js" type="text/javascript"></script>
+<script src="javascript/services/user.service.js" type="text/javascript"></script>
+<script src="javascript/components/github.component.js" type="text/javascript"></script>
+
+</html>
